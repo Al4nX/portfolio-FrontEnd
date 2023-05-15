@@ -1,36 +1,46 @@
-.row{
+.about-me {
     padding: 20px;
-}
-
-div{
-    text-align: center;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(0,0,0,1) 100%);
-}
-
-/*estilos para la foto de perfil*/
-@media(min-width:576px){
-    #ft-perfil{
-        position: absolute;
-        width: 15%;
-        border-radius: 50%;
-        box-shadow: 3px 3px 3px black;
-        left: 3%;
-        top: 600px;
+  }
+  
+  .about-me-content {
+    text-align: left;
+  }
+  
+  #ft-perfil {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+  }
+  
+  .job-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  @media(min-width:576px){
+    #ft-perfil {
+      width: 80%;
+      max-width: 200px;
+      position: absolute;
+      left: 5%;
+      top: 5%;
     }
-}
-
-@media(max-width:575px){
-    #ft-perfil{
-        position: absolute;
-        width: 30%;
-        border-radius: 50%;
-        box-shadow: 3px 3px 3px black;
-        left: 33%;
-        top: 630px;
-    }
-}
     
-#nombre{
-    margin-top: 30%;
-}
+    #nombre {
+      margin-top: 20px;
+    }
+  }
+  
+  @media(max-width:575px){
+    #ft-perfil {
+      width: 50%;
+      max-width: 150px;
+      position: relative;
+      margin: 0 auto;
+    }
+    
+    #nombre {
+      margin-top: 10px;
+    }
+  }
+  
